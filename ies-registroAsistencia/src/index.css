@@ -1,0 +1,48 @@
+/* ==========================
+   ESTILOS GLOBALES
+========================== */
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  color: #4f4263;
+  background-color: #f4f1f8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f4f1f8;
+}
+
+/* ==========================
+   ROOT DE REACT
+========================== */
+
+#root {
+  min-height: 100vh;
+}
+
+/* ==========================
+   ELEMENTOS GENERALES
+========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}

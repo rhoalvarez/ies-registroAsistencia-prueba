@@ -1,0 +1,94 @@
+/* ==========================
+   INICIO
+========================== */
+
+.inicio-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f1f8;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.inicio-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 45px 35px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.inicio-logo {
+  width: 150px;
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.inicio-card h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #34244f;
+}
+
+.inicio-subtitulo {
+  margin: 0 auto 35px;
+  max-width: 380px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #665a75;
+}
+
+.boton-iniciar {
+  width: 100%;
+  max-width: 300px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6b46a5;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.boton-iniciar:hover {
+  background-color: #563788;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 650px) {
+  .inicio-container {
+    padding: 15px;
+  }
+
+  .inicio-card {
+    padding: 35px 22px;
+    border-radius: 18px;
+  }
+
+  .inicio-logo {
+    width: 130px;
+    margin-bottom: 25px;
+  }
+
+  .inicio-card h1 {
+    font-size: 27px;
+  }
+
+  .inicio-subtitulo {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .boton-iniciar {
+    max-width: 100%;
+  }
+}

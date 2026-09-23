@@ -1,0 +1,809 @@
+/* ==========================
+   SELECCIÓN
+========================== */
+
+.seleccion-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4f1f8;
+
+  padding: 30px 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   TARJETA
+========================== */
+
+.seleccion-card {
+  width: 100%;
+  max-width: 620px;
+
+  background-color: white;
+
+  padding: 38px 42px;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 10px 30px rgba(60, 40, 90, 0.12);
+
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+
+/* ==========================
+   LOGO IES
+========================== */
+
+.seleccion-logo {
+  width: 125px;
+  height: 125px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0 auto 18px;
+}
+
+
+/* ==========================
+   ENCABEZADO
+========================== */
+
+.seleccion-header {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+/* ==========================
+   ICONO DEL ENCABEZADO
+========================== */
+
+.icono-seleccion {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 8px;
+
+  color: #6b4aa0;
+}
+
+
+/* ==========================
+   TAMAÑO DEL ICONO
+========================== */
+
+.icono-seleccion svg {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+}
+
+
+/* ==========================
+   TÍTULO
+========================== */
+
+.seleccion-card h1 {
+  margin: 0 0 14px;
+
+  font-size: 32px;
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  color: #3f3f46;
+}
+
+
+/* ==========================
+   BIENVENIDA
+========================== */
+
+.bienvenida {
+  margin: 0;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+
+  color: #6b6473;
+}
+
+.bienvenida strong {
+  color: #4f3973;
+
+  font-weight: 600;
+}
+
+
+/* ==========================
+   DÍA ACTUAL
+========================== */
+
+.dia-actual {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  margin: 24px 0 30px;
+
+  font-size: 17px;
+
+  line-height: 1.4;
+
+  color: #5f5968;
+}
+
+.dia-icono {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #756a80;
+}
+
+.dia-icono svg {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+}
+
+.dia-actual strong {
+  color: #4f3973;
+}
+
+
+/* ==========================
+   FORMULARIO
+========================== */
+
+.seleccion-form {
+  width: 100%;
+}
+
+
+/* ==========================
+   GRUPOS
+========================== */
+
+.seleccion-form-group {
+  width: 100%;
+
+  margin-bottom: 24px;
+
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   LABEL
+========================== */
+
+.seleccion-form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #44404b;
+}
+
+
+/* ==========================
+   CONTENEDOR SELECT
+========================== */
+
+.select-container {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+
+/* ==========================
+   ICONO DEL SELECT
+========================== */
+
+.select-icon {
+  position: absolute;
+
+  left: 15px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #756a80;
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+.select-icon svg {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+}
+
+
+/* ==========================
+   SELECT
+========================== */
+
+.select-container select {
+  width: 100%;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  padding: 14px 45px 14px 48px;
+
+  border: 1px solid #d3ceda;
+
+  border-radius: 11px;
+
+  background-color: white;
+
+  color: #4a4650;
+
+  font-size: 16px;
+
+  line-height: 1.3;
+
+  outline: none;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+
+/* ==========================
+   SELECT - FOCUS
+========================== */
+
+.select-container select:focus {
+  border-color: #7650aa;
+
+  box-shadow:
+    0 0 0 3px rgba(118, 80, 170, 0.13);
+}
+
+
+/* ==========================
+   SIN CLASES
+========================== */
+
+.sin-clases {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 16px;
+
+  border-radius: 10px;
+
+  background-color: #faf7fc;
+
+  border: 1px solid #e3ddea;
+
+  color: #756a80;
+
+  font-size: 15px;
+
+  line-height: 1.4;
+
+  box-sizing: border-box;
+}
+
+.sin-clases p {
+  margin: 0;
+}
+
+
+/* ==========================
+   CLASE SELECCIONADA
+========================== */
+
+.clase-seleccionada {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  width: 100%;
+
+  padding: 16px;
+
+  margin: 5px 0 25px;
+
+  border-radius: 12px;
+
+  background-color: #f7f3fb;
+
+  border: 1px solid #e1d8ec;
+
+  text-align: left;
+
+  color: #5c5365;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   CHECK CLASE
+========================== */
+
+.clase-check {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #6b4aa0;
+
+  color: white;
+}
+
+.clase-check svg {
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+}
+
+
+/* ==========================
+   TEXTO CLASE
+========================== */
+
+.clase-seleccionada strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #4f3973;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.clase-seleccionada span {
+  display: block;
+
+  font-size: 15px;
+
+  line-height: 1.4;
+
+  color: #68616f;
+}/* ==========================
+   BOTÓN CONTINUAR
+========================== */
+
+.boton-continuar {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background-color: #68439c;
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+
+/* ==========================
+   ICONO DEL BOTÓN
+========================== */
+
+.boton-continuar svg {
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+}
+
+
+/* ==========================
+   BOTÓN - HOVER
+========================== */
+
+.boton-continuar:hover:not(:disabled) {
+  background-color: #553580;
+
+  transform: translateY(-1px);
+}
+
+
+/* ==========================
+   BOTÓN - FOCUS
+========================== */
+
+.boton-continuar:focus-visible {
+  outline: 2px solid #68439c;
+
+  outline-offset: 3px;
+}
+
+
+/* ==========================
+   BOTÓN DESHABILITADO
+========================== */
+
+.boton-continuar:disabled {
+  background-color: #c8c2d1;
+
+  color: white;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 800px) {
+
+  .seleccion-container {
+    padding: 25px 18px;
+  }
+
+  .seleccion-card {
+    max-width: 560px;
+
+    padding: 35px 32px;
+  }
+
+  .seleccion-logo {
+    width: 115px;
+    height: 115px;
+  }
+
+  .seleccion-card h1 {
+    font-size: 29px;
+  }
+
+}
+
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width: 600px) {
+
+  .seleccion-container {
+    min-height: 100vh;
+
+    padding: 20px 12px;
+
+    align-items: center;
+  }
+
+
+  .seleccion-card {
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 28px 18px;
+
+    border-radius: 18px;
+  }
+
+
+  /* LOGO */
+
+  .seleccion-logo {
+    width: 110px;
+    height: 110px;
+
+    margin-bottom: 12px;
+  }
+
+
+  /* ICONO */
+
+  .icono-seleccion {
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 5px;
+  }
+
+  .icono-seleccion svg {
+    width: 29px;
+    height: 29px;
+  }
+
+
+  /* TÍTULO */
+
+  .seleccion-card h1 {
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+  }
+
+
+  /* BIENVENIDA */
+
+  .bienvenida {
+    font-size: 16px;
+  }
+
+
+  /* DÍA */
+
+  .dia-actual {
+    font-size: 16px;
+
+    margin: 18px 0 25px;
+  }
+
+  .dia-icono svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* GRUPOS */
+
+  .seleccion-form-group {
+    margin-bottom: 20px;
+  }
+
+
+  /* LABEL */
+
+  .seleccion-form-group label {
+    font-size: 15px;
+
+    margin-bottom: 8px;
+  }
+
+
+  /* SELECT */
+
+  .select-container select {
+    min-height: 48px;
+
+    padding: 13px 38px 13px 45px;
+
+    font-size: 14px;
+
+    line-height: 1.3;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+  }
+
+
+  /* ICONO SELECT */
+
+  .select-icon {
+    left: 13px;
+  }
+
+  .select-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* SIN CLASES */
+
+  .sin-clases {
+    padding: 13px;
+
+    font-size: 14px;
+  }
+
+
+  /* CLASE */
+
+  .clase-seleccionada {
+    padding: 14px;
+
+    margin-top: 3px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .clase-check {
+    width: 32px;
+    height: 32px;
+  }
+
+  .clase-check svg {
+    width: 19px;
+    height: 19px;
+  }
+
+
+  .clase-seleccionada strong {
+    font-size: 14px;
+  }
+
+  .clase-seleccionada span {
+    font-size: 14px;
+  }/* BOTÓN */
+
+  .boton-continuar {
+    padding: 14px;
+
+    font-size: 16px;
+  }
+
+  .boton-continuar svg {
+    width: 19px;
+    height: 19px;
+  }
+
+}
+
+
+/* ==========================
+   CELULAR MUY PEQUEÑO
+========================== */
+
+@media (max-width: 380px) {
+
+  .seleccion-container {
+    padding: 15px 8px;
+  }
+
+
+  .seleccion-card {
+    padding: 24px 14px;
+
+    border-radius: 16px;
+  }
+
+
+  .seleccion-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .seleccion-card h1 {
+    font-size: 22px;
+  }
+
+
+  .bienvenida {
+    font-size: 14px;
+  }
+
+
+  .dia-actual {
+    font-size: 14px;
+
+    margin: 16px 0 22px;
+  }
+
+
+  .seleccion-form-group label {
+    font-size: 14px;
+  }
+
+
+  .select-container select {
+    font-size: 13px;
+
+    padding-left: 42px;
+    padding-right: 34px;
+  }
+
+
+  .clase-seleccionada {
+    gap: 9px;
+
+    padding: 12px;
+  }
+
+
+  .clase-seleccionada strong {
+    font-size: 13px;
+  }
+
+
+  .clase-seleccionada span {
+    font-size: 13px;
+  }.boton-continuar {
+    padding: 13px;
+
+    font-size: 15px;
+  }
+
+}

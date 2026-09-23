@@ -1,0 +1,513 @@
+/* ==========================
+   ASISTENCIA
+========================== */
+
+.asistencia-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4f1f8;
+
+  padding: 30px 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   TARJETA
+========================== */
+
+.asistencia-card {
+  width: 100%;
+  max-width: 650px;
+
+  background-color: white;
+
+  padding: 45px;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.10);
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   TÍTULO
+========================== */
+
+.asistencia-card h1 {
+  margin: 0 0 30px;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  color: #34244f;
+}
+
+
+/* ==========================
+   DATOS DE LA CLASE
+========================== */
+
+.datos-clase {
+  margin-bottom: 35px;
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  background-color: #faf8fc;
+
+  border: 1px solid #e2dceb;
+
+  box-sizing: border-box;
+}
+
+/* ==========================
+   RELOJ
+========================== */
+
+.reloj {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-bottom: 30px;
+}
+
+.reloj strong {
+  font-size: 17px;
+
+  color: #4f3b70;
+
+  font-weight: 700;
+}
+
+.reloj span {
+  font-size: 30px;
+
+  color: #34244f;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.reloj small {
+  font-size: 15px;
+
+  color: #665a75;
+
+  line-height: 1.2;
+}
+
+.datos-clase p {
+  margin: 8px 0;
+
+  font-size: 17px;
+
+  color: #665a75;
+
+  line-height: 1.5;
+}
+
+.datos-clase strong {
+  color: #4f3b70;
+
+  font-weight: 700;
+}
+
+
+/* ==========================
+   REGISTRO
+========================== */
+
+.registro {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  margin-top: 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   ENTRADA / SALIDA
+========================== */
+
+.registro-item {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 25px 20px;
+
+  border: 1px solid #e2dceb;
+
+  border-radius: 16px;
+
+  background-color: #faf8fc;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   TÍTULOS ENTRADA / SALIDA
+========================== */
+
+.registro-item h2 {
+  margin: 0 0 15px;
+
+  font-size: 21px;
+
+  font-weight: 600;
+
+  color: #34244f;
+}
+
+
+/* ==========================
+   HORARIOS
+========================== */
+
+.registro-item > p {
+  margin: 10px 0;
+
+  font-size: 20px;
+
+  color: #665a75;
+
+  line-height: 1.5;
+}
+
+
+/* ==========================
+   BOTONES
+========================== */
+
+.registro-item button {
+  width: 100%;
+
+  padding: 12px 15px;
+
+  margin-top: 10px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: #6b46a5;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+
+/* ==========================
+   BOTÓN HOVER
+========================== */
+
+.registro-item button:hover:not(:disabled) {
+  background-color: #563788;
+
+  transform: translateY(-1px);
+}
+
+
+/* ==========================
+   BOTÓN DESHABILITADO
+========================== */
+
+.registro-item button:disabled {
+  background-color: #c9c3d1;
+
+  color: white;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* ==========================
+   MENSAJES
+========================== */
+
+.mensaje-exito {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 13px 15px;
+
+  border-radius: 10px;
+
+  background-color: #f5f1fa;
+
+  color: #5b3f8c;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  box-sizing: border-box;
+}
+
+.mensaje-exito p {
+  margin: 0;
+}
+
+
+/* ==========================
+   CUENTA REGRESIVA
+========================== */
+
+.asistencia-card > div:last-child {
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.asistencia-card > div:last-child p {
+  margin-top: 25px;
+
+  font-size: 16px;
+
+  color: #665a75;
+
+  line-height: 1.5;
+}
+
+.asistencia-card > div:last-child strong {
+  color: #5b3f8c;
+
+  font-weight: 700;
+}
+
+
+/* ==========================
+   BOTÓN VOLVER AL LOGIN
+========================== */
+
+.asistencia-card > div:last-child button {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  margin-top: 15px;
+
+  border: 1px solid #d4c9e1;
+
+  border-radius: 10px;
+
+  background-color: white;
+
+  color: #5b3f8c;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.asistencia-card > div:last-child button:hover {
+  background-color: #f7f3fb;
+
+  border-color: #6b46a5;
+}
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 700px) {
+
+  .asistencia-container {
+    padding: 25px 15px;
+  }
+
+  .asistencia-card {
+    max-width: 100%;
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+  }
+
+  .asistencia-card h1 {
+    font-size: 29px;
+  }
+
+  .datos-clase p {
+    font-size: 16px;
+  }
+
+  .registro {
+    gap: 18px;
+  }
+
+  .registro-item {
+    padding: 22px 17px;
+  }
+
+}
+
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width: 600px) {
+
+  .asistencia-container {
+    min-height: 100vh;
+
+    padding: 20px 12px;
+
+    align-items: flex-start;
+  }
+
+  .asistencia-card {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 28px 18px;
+
+    border-radius: 18px;
+  }
+
+  .asistencia-card h1 {
+    font-size: 25px;
+
+    margin-bottom: 24px;
+  }
+
+  .datos-clase {
+    margin-bottom: 25px;
+
+    padding: 16px 14px;
+  }
+
+  .datos-clase p {
+    font-size: 14px;
+
+    margin: 7px 0;
+  }
+
+  .registro {
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-top: 10px;
+  }
+
+  .registro-item {
+    width: 100%;
+
+    padding: 22px 17px;
+  }
+
+  .registro-item h2 {
+    font-size: 20px;
+  }
+
+  .registro-item > p {
+    font-size: 19px;
+  }
+
+  .registro-item button {
+    padding: 13px 12px;
+
+    font-size: 15px;
+  }
+
+  .mensaje-exito {
+    font-size: 14px;
+
+    padding: 12px;
+  }
+
+  .asistencia-card > div:last-child p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ==========================
+   CELULARES MUY PEQUEÑOS
+========================== */
+
+@media (max-width: 380px) {
+
+  .asistencia-container {
+    padding: 15px 8px;
+  }
+
+  .asistencia-card {
+    padding: 24px 14px;
+  }
+
+  .asistencia-card h1 {
+    font-size: 23px;
+  }
+
+  .datos-clase {
+    padding: 14px 10px;
+  }
+
+  .datos-clase p {
+    font-size: 13px;
+  }
+
+  .registro-item {
+    padding: 20px 14px;
+  }
+
+  .registro-item h2 {
+    font-size: 18px;
+  }
+
+  .registro-item > p {
+    font-size: 18px;
+  }
+
+}

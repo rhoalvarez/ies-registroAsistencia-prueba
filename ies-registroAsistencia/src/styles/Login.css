@@ -1,0 +1,717 @@
+/* ==========================
+   LOGIN
+========================== */
+
+.login-container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4f1f8;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   TARJETA
+========================== */
+
+.login-card {
+  width: 100%;
+  max-width: 620px;
+
+  background-color: white;
+
+  padding: 45px 60px;
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 15px 40px rgba(60, 40, 90, 0.12);
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   LOGO IES
+========================== */
+
+.logo-ies {
+  width: 190px;
+  height: 190px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0 auto 10px;
+}
+
+
+/* ==========================
+   TÍTULO
+========================== */
+
+.login-card h2 {
+  margin: 0 0 42px;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  color: #3f3f3f;
+
+  line-height: 1.2;
+}
+
+
+/* ==========================
+   GRUPOS
+========================== */
+
+.form-group {
+  width: 100%;
+
+  margin-bottom: 25px;
+
+  text-align: left;
+}
+
+
+/* ==========================
+   LABEL
+========================== */
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #3f3f3f;
+}
+
+
+/* ==========================
+   CONTENEDOR DEL INPUT
+========================== */
+
+.input-icon-container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+
+/* ==========================
+   ICONOS
+========================== */
+
+.input-icon {
+  position: absolute;
+
+  left: 17px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #6b6473;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+/* ==========================
+   TAMAÑO DE ICONOS
+========================== */
+
+.input-icon svg {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+}
+
+
+/* ==========================
+   INPUT USUARIO
+========================== */
+
+.input-icon-container input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 16px 18px 16px 52px;
+
+  border: 1px solid #d0ccd6;
+
+  border-radius: 13px;
+
+  background-color: white;
+
+  font-size: 17px;
+
+  color: #333;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+
+/* ==========================
+   INPUT USUARIO - FOCUS
+========================== */
+
+.input-icon-container input:focus {
+  border-color: #68459a;
+
+  box-shadow:
+    0 0 0 3px rgba(104, 69, 154, 0.12);
+}
+
+
+/* ==========================
+   CONTRASEÑA
+========================== */
+
+.password-container {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  width: 100%;
+}
+
+
+/* ==========================
+   ÍCONO DEL CANDADO
+========================== */
+
+.password-container .input-icon {
+  left: 17px;
+}
+
+
+/* ==========================
+   INPUT CONTRASEÑA
+========================== */
+
+.password-container input {
+  flex: 1;
+
+  min-width: 0;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 16px 18px 16px 52px;
+
+  border: 1px solid #d0ccd6;
+
+  border-radius: 13px;
+
+  background-color: white;
+
+  font-size: 17px;
+
+  color: #333;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+
+/* ==========================
+   INPUT CONTRASEÑA - FOCUS
+========================== */
+
+.password-container input:focus {
+  border-color: #68459a;
+
+  box-shadow:
+    0 0 0 3px rgba(104, 69, 154, 0.12);
+}
+
+
+/* ==========================
+   BOTÓN MOSTRAR CONTRASEÑA
+========================== */
+
+.boton-mostrar {
+  width: 55px;
+  height: 55px;
+
+  min-width: 55px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #d0ccd6;
+
+  border-radius: 13px;
+
+  background-color: white;
+
+  color: #5f5867;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+
+/* ==========================
+   ÍCONO DEL OJO
+========================== */
+
+.boton-mostrar svg {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+}
+
+
+/* ==========================
+   BOTÓN MOSTRAR - HOVER
+========================== */
+
+.boton-mostrar:hover {
+  border-color: #68459a;
+
+  background-color: #f7f3fb;
+
+  color: #68459a;
+}
+
+
+/* ==========================
+   BOTÓN MOSTRAR - FOCUS
+========================== */
+
+.boton-mostrar:focus-visible {
+  outline: 2px solid #68459a;
+
+  outline-offset: 2px;
+}
+
+
+/* ==========================
+   MENSAJES DE ERROR
+========================== */
+
+.mensaje-error {
+  margin: 7px 0 0;
+
+  font-size: 14px;
+
+  color: #d64545;
+
+  line-height: 1.4;
+}
+
+
+/* ==========================
+   BOTÓN INGRESAR
+========================== */
+
+.boton-ingresar {
+  width: 100%;
+
+  padding: 16px;
+
+  margin-top: 8px;
+
+  border: none;
+
+  border-radius: 13px;
+
+  background-color: #68459a;
+
+  color: white;
+
+  font-size: 19px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+
+/* ==========================
+   BOTÓN INGRESAR - HOVER
+========================== */
+
+.boton-ingresar:hover:not(:disabled) {
+  background-color: #563781;
+
+  transform: translateY(-1px);
+}
+
+
+/* ==========================
+   BOTÓN INGRESAR - FOCUS
+========================== */
+
+.boton-ingresar:focus-visible {
+  outline: 2px solid #68459a;
+
+  outline-offset: 3px;
+}
+
+
+/* ==========================
+   BOTÓN INGRESAR - DESHABILITADO
+========================== */
+
+.boton-ingresar:disabled {
+  background-color: #c8c1d1;
+
+  color: white;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* ==========================
+   MENSAJE DE SEGURIDAD
+========================== */
+
+.seguridad {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  margin-top: 24px;
+
+  color: #665c70;
+
+  font-size: 15px;
+
+  line-height: 1.4;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================
+   ÍCONO DE SEGURIDAD
+========================== */
+
+.seguridad svg {
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+
+  color: #68459a;
+}
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 800px) {
+
+  .login-container {
+    padding: 25px 18px;
+  }
+
+  .login-card {
+    max-width: 560px;
+
+    padding: 40px 45px;
+  }
+
+  .logo-ies {
+    width: 170px;
+    height: 170px;
+  }
+
+}
+
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width: 600px) {
+
+  .login-container {
+    min-height: 100vh;
+
+    padding: 15px 10px;
+  }
+
+
+  .login-card {
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 28px 18px;
+
+    border-radius: 18px;
+  }
+
+
+  /* LOGO */
+
+  .logo-ies {
+    width: 125px;
+    height: 125px;
+
+    margin-bottom: 5px;
+  }
+
+
+  /* TÍTULO */
+
+  .login-card h2 {
+    font-size: 21px;
+
+    margin-bottom: 26px;
+
+    line-height: 1.25;
+  }
+
+
+  /* GRUPOS */
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+
+  /* LABEL */
+
+  .form-group label {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+  }
+
+
+  /* INPUTS */
+
+  .input-icon-container input,
+  .password-container input {
+
+    width: 100%;
+
+    font-size: 16px;
+
+    padding: 13px 13px 13px 48px;
+  }
+
+
+  /* ÍCONOS */
+
+  .input-icon {
+    left: 16px;
+  }
+
+  .password-container .input-icon {
+    left: 16px;
+  }
+
+
+  .input-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* CONTRASEÑA */
+
+  .password-container {
+    gap: 7px;
+  }
+
+
+  /* OJO */
+
+  .boton-mostrar {
+    width: 46px;
+
+    min-width: 46px;
+
+    height: 46px;
+  }
+
+
+  .boton-mostrar svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* ERRORES */
+
+  .mensaje-error {
+    font-size: 13px;
+  }
+
+
+  /* BOTÓN */
+
+  .boton-ingresar {
+    padding: 14px;
+
+    font-size: 16px;
+  }
+
+
+  /* SEGURIDAD */
+
+  .seguridad {
+    font-size: 13px;
+
+    gap: 7px;
+
+    padding: 0 5px;
+
+    margin-top: 18px;
+  }
+
+
+  .seguridad svg {
+    width: 19px;
+    height: 19px;
+  }
+
+}
+
+
+/* ==========================
+   CELULAR MUY PEQUEÑO
+========================== */
+
+@media (max-width: 380px) {
+
+  .login-container {
+    padding: 12px 8px;
+  }
+
+
+  .login-card {
+    padding: 24px 14px;
+
+    border-radius: 16px;
+  }
+
+
+  .logo-ies {
+    width: 110px;
+    height: 110px;
+  }
+
+
+  .login-card h2 {
+    font-size: 19px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+
+  .input-icon-container input,
+  .password-container input {
+    font-size: 15px;
+
+    padding: 12px 10px 12px 45px;
+  }
+
+
+  .input-icon {
+    left: 14px;
+  }
+
+
+  .password-container .input-icon {
+    left: 14px;
+  }
+
+
+  .boton-mostrar {
+    width: 43px;
+
+    min-width: 43px;
+
+    height: 43px;
+  }
+
+
+  .boton-ingresar {
+    padding: 13px;
+
+    font-size: 15px;
+  }
+
+
+  .seguridad {
+    font-size: 12px;
+
+    gap: 6px;
+  }
+
+}
