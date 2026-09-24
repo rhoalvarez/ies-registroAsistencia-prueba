@@ -52,8 +52,7 @@ function Login({ onLogin }) {
     }
 
     const usuarioIngresado =
-      usuario.trim().toLowerCase();
-
+  usuario.trim();
     try {
       // ==========================
       // CONECTAR CON EL BACKEND
